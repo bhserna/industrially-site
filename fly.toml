@@ -1,0 +1,23 @@
+# fly.toml app configuration file generated for industrially-site-aged-shape-6229 on 2024-07-31T18:05:10-06:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'industrially-site'
+primary_region = 'gdl'
+console_command = '/rails/bin/rails console'
+
+[build]
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '512mb'
+  cpu_kind = 'shared'
+  cpus = 1
