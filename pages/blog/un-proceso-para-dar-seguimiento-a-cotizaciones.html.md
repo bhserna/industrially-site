@@ -1,16 +1,16 @@
 ---
-title: Proceso para dar seguimiento a cotizaciones
+title: Proceso para dar seguimiento a cotizaciones para proveedores industriales
 date: 2024-08-30
 layout: blog_post
 ---
 
-Como proveedores industrial es normal trabajar en base a cotizaciones y nos enfocamos en cotizar mucho, pero nos olvidamos de dar seguimiento a las cotizaciones que ya hicimos.
+Como proveedores industriales es normal trabajar en base a cotizaciones y enfocarse en cotizar mucho, pero nos olvidamos de dar seguimiento a las cotizaciones que ya hicimos.
 
 Muchas veces sabemos que dar seguimiento es importante, pero no lo hacemos porque es difícil, no tenemos una estructura para llevar el control y darnos el tiempo para hacerlo.
 
 Por eso aquí te compartimos un sugerencia de proceso que puedes seguir tú en lo personal o con tu equipo para que sea un poco más fácil llevar control de a qué cotización es necesario dar seguimiento y qué fue lo último que sabemos sobre cada cotización.
 
-Puede que estos pasos se sientan como una carga, pero llevar este control, les va ayudar a dar un mejor servicio, relación con sus clientes y mejores estimaciones.
+Puede que estos pasos se sientan como una carga, pero llevar este control, les va ayudar a dar un mejor servicio, tener una mejor relación con sus clientes y tener mejores estimaciones de sus ventas.
 
 ## Un solo lugar para todos
 
@@ -22,7 +22,7 @@ Puede ser que antes de usar esto con todo tu equipo quieras empezar a hacerlo so
 2. Todos los días cada vendedor va a dedicar X tiempo (X puede ser 1 hora, ustedes lo deciden) a dar seguimiento a:
     * A las cotizaciones que tienen Y días sin seguimiento (Y puede ser tal vez de 3 a 7 días, ustedes deciden).
     * A las cotizaciones que tienen una fecha esperada de seguimiento para ese día (tal vez por un acuerdo con el cliente)
-3. Después de cada seguimiento va a apuntar algunas notas sobre el seguimiento de forma que sea fácil regresar a la conversación después.
+3. Después de cada seguimiento el vendedor va a apuntar algunas notas sobre el seguimiento de forma que sea fácil regresar a la conversación después.
 
 ## ¿Qué datos debemos capturar?
 
