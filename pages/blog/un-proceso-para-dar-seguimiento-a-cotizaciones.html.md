@@ -4,13 +4,13 @@ date: 2024-08-30
 layout: blog_post
 ---
 
-Como proveedores industriales es normal trabajar en base a cotizaciones y enfocarse en cotizar mucho, pero nos olvidamos de dar seguimiento a las cotizaciones que ya hicimos.
+Como proveedores industriales es normal trabajar en base a cotizaciones y enfocarse en cotizar mucho, pero mucahs veces nos olvidamos de dar seguimiento a las cotizaciones que ya hicimos.
 
-Muchas veces sabemos que dar seguimiento es importante, pero no lo hacemos porque es difícil, no tenemos una estructura para llevar el control y darnos el tiempo para hacerlo.
+Sabemos que dar seguimiento es importante, pero no lo hacemos porque es difícil, y no tenemos una estructura para llevar el control y darnos el tiempo para hacerlo.
 
 Por eso aquí te compartimos un sugerencia de proceso que puedes seguir tú en lo personal o con tu equipo para que sea un poco más fácil llevar control de a qué cotización es necesario dar seguimiento y qué fue lo último que sabemos sobre cada cotización.
 
-Puede que estos pasos se sientan como una carga, pero llevar este control, les va ayudar a dar un mejor servicio, tener una mejor relación con sus clientes y tener mejores estimaciones de sus ventas.
+Puede que estos pasos se sientan como una carga, pero llevar este control les va ayudar a dar un mejor servicio, tener una mejor relación con sus clientes y tener mejores estimaciones de sus ventas.
 
 ## Un solo lugar para todos
 
