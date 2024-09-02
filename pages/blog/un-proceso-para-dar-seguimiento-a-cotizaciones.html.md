@@ -4,17 +4,17 @@ date: 2024-08-30
 layout: blog_post
 ---
 
-Como proveedores industriales es normal trabajar en base a cotizaciones y enfocarse en cotizar mucho, pero mucahs veces nos olvidamos de dar seguimiento a las cotizaciones que ya hicimos.
+Como vendedor o proveedor industriales es normal trabajar en base a cotizaciones y enfocarse en cotizar mucho, pero es posible que muchas veces te olvides de dar seguimiento a las cotizaciones que ya hiciste.
 
-Sabemos que dar seguimiento es importante, pero no lo hacemos porque es difícil, y no tenemos una estructura para llevar el control y darnos el tiempo para hacerlo.
+Tal vez sabes que dar seguimiento es importante, pero hacerlo es difícil, porque no tienes una estructura para llevar el control y no es fácil encontrar el tiempo para hacerlo.
 
-Por eso aquí te compartimos un sugerencia de proceso que puedes seguir tú en lo personal o con tu equipo para que sea un poco más fácil llevar control de a qué cotización es necesario dar seguimiento y qué fue lo último que sabemos sobre cada cotización.
+Por eso aquí te compartimos un sugerencia de proceso que puedes seguir tú en lo personal o con tu equipo para que sea un poco más fácil llevar control de a qué cotización es necesario dar seguimiento y qué fue lo último que sabes sobre cada cotización.
 
-Puede que estos pasos se sientan como una carga, pero llevar este control les va ayudar a dar un mejor servicio, tener una mejor relación con sus clientes y tener mejores estimaciones de sus ventas.
+Puede que estos pasos se sientan como una carga, pero llevar este control te va a ayudar a dar un mejor servicio, tener una mejor relación con tus clientes y tener mejores estimaciones de tus ventas.
 
 ## Un solo lugar para todos
 
-Puede ser que antes de usar esto con todo tu equipo quieras empezar a hacerlo solo tú, pero es importante que tengan un lugar donde todos puedan ver el estatus para que así puedan como equipo o organización saber el estatus de todo el equipo y puedan sustituirse o apoyarse si es necesario.
+Puede ser que antes de usar esto con todo tu equipo quieras empezar a hacerlo solo tú, pero es importante que tengan un lugar donde todos puedan ver el estatus para que así como equipo o organización puedan saber el estatus de todo el equipo y puedan sustituirse o apoyarse si es necesario.
 
 ## Los pasos
 
@@ -24,13 +24,13 @@ Puede ser que antes de usar esto con todo tu equipo quieras empezar a hacerlo so
     * A las cotizaciones que tienen una fecha esperada de seguimiento para ese día (tal vez por un acuerdo con el cliente)
 3. Después de cada seguimiento el vendedor va a apuntar algunas notas sobre el seguimiento de forma que sea fácil regresar a la conversación después.
 
-## ¿Qué datos debemos capturar?
+## ¿Qué datos deben capturar?
 
-Depende de ustedes, pero aquí te dejo una sugerencia de los datos mínimos que pueden capturar para tener un seguimiento más efectivo.
+Depende de ustedes, pero aquí te dejo una sugerencia de los datos mínimos que deben capturar para tener un seguimiento más efectivo.
 
-- Referencia de la cotización
+- Nombre o referencia de la cotización
 - Nombre del cliente
-- Contacto del cliente
+- Contacto
 - Vendedor responsable
 - Monto total
 - Estatus de la cotización
@@ -40,14 +40,14 @@ Depende de ustedes, pero aquí te dejo una sugerencia de los datos mínimos que 
 
 ## ¿Por qué no dejar todo en el correo?
 
-Algunas veces podemos vernos tentados por solo dejar la conversación en el correo y dejar que solo nos avise de conversaciones sin respuesta, pero…
+Algunas veces puedes verte tentado por solo dejar la conversación en el correo y dejar que solo el correo te avise de conversaciones sin respuesta, pero…
 
-- No todas los seguimientos son por correo electrónico y tal vez justo si no nos responden queremos intentar por diferentes lugares
+- No todas los seguimientos son por correo electrónico y tal vez justo si no te responden quieres intentar por diferentes lugares
 - El resto del equipo no puede dar seguimiento
-- Es muy difícil tener una vista general del estatus de nuestras cotizaciones como equipo y pronosticar posibles ventas en base a eso.
+- Es muy difícil tener una vista general del estatus de las cotizaciones como equipo y pronosticar posibles ventas en base a eso.
 
-## ¿Donde podemos llevar este control?
+## ¿Dónde pueden llevar este control?
 
-Hay diferentes formas, pueden tener algo “simple” como una hoja de cálculo compartida en la nube, o puede construir un board en alguna herramienta como notion o trello.
+Hay diferentes lugares, pueden tenerlo en una hoja de cálculo compartida en la nube, o puede construir un board en alguna herramienta como notion o trello.
 
 También pueden usar alguna herramienta específica para este problema como [nuestra herramienta de seguimiento de cotizaciones de industrially](/) o tal vez buscar hacer un desarrollo específico para ustedes.
