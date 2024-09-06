@@ -1,0 +1,28 @@
+---
+title: Industrially.net | Blog
+---
+
+<main class="container mx-auto px-4 py-8 max-w-3xl mb-10">
+  <article class="mx-auto flex flex-col gap-6">
+    <h1 class="text-text text-2xl sm:text-3xl lg:text-4xl font-bold">Blog</h1>
+    <% site = Sitepress::Site.new %>
+    <% posts = site.resources.glob("blog/*html*") %>
+    <% posts.reverse.each do |article| %>
+      <a href="<%= article.request_path %>" class="block p-4 border rounded-md border-gray-300 flex flex-col gap-2 hover:border-gray-400 transition-colors duration-300">
+        <h3 class="text-text font-bold text-xl sm:text-2xl"><%= article.data[:title] %></h3>
+        <p class="text-text opacity-75 text-sm sm:text-base"><%= article.data[:date].strftime("%B %d, %Y") %></p>
+        <p class="text-text opacity-75 text-sm sm:text-base"><%= article.data[:description] %></p>
+      </a>
+    <% end %>
+  </article>
+</main>
+
+<footer class="bg-gray-100 py-10">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-2xl font-bold mb-4 text-text">¿Quieres optimizar tus ventas?</h2>
+    <p class="mb-4 text-text">Suscríbete para recibir noticias sobre nuestra app de seguimiento de cotizaciones.</p>
+    <a href="/" class="bg-accent hover:bg-primary text-white font-bold py-2 px-4 rounded transition duration-300">
+      Suscribirse
+    </a>
+  </div>
+</footer>
