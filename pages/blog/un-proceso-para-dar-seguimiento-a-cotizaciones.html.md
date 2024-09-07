@@ -49,6 +49,4 @@ Algunas veces puedes verte tentado por solo dejar la conversación en el correo 
 
 ## ¿Dónde pueden llevar este control?
 
-Hay diferentes lugares, pueden tenerlo en una hoja de cálculo compartida en la nube, o puede construir un board en alguna herramienta como notion o trello.
-
-También pueden usar alguna herramienta específica para este problema como [nuestra herramienta de seguimiento de cotizaciones de industrially](/) o tal vez buscar hacer un desarrollo específico para ustedes.
+Tal vez pronto en [industrially.net](/) tengamos una herramienta específica para este problema, pero por ahora pueden tenerlo en una hoja de cálculo compartida en la nube, o pueden construir un board en alguna herramienta como notion o trello.
