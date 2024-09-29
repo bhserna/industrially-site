@@ -2,7 +2,7 @@
 title: Consenso de tiempos para dar seguimiento a cotizaciones
 date: 2024-09-06
 layout: blog_post
-description: "Tanto en lo individual o como equipo, es muy útil tener un consenso de los tiempos esperados para cosas como: Los días que quieren dejar pasar entre cada seguimiento.  Cuántos intentos de seguimiento quieren dar. Cuánto tiempo quieren dedicar diariamente a los seguimientos."
+description: "Tanto en lo individual o como equipo, es muy útil tener un consenso de los tiempos esperados para cosas como: Los días que quieren dejar pasar entre cada seguimiento.  Cuántos intentos de seguimiento quieren dar. Cuánto tiempo quieren dedicar diariamente a los seguimientos..."
 ---
 
 Tanto en lo individual o como equipo, es muy útil tener un consenso de los tiempos esperados para cosas como:
