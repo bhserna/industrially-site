@@ -22,7 +22,7 @@ Por eso aquí te compartimos una guía de proceso que puedes seguir tú en lo pe
 
 Necesitas un lugar donde tengas la lista de solicitudes de cotización recibidas, donde puedas capturar los datos relevantes de la solicitud.
 
-Puede ser una hoja de cálculo, un herramienta de kanban como notion o trello, o tal vez con nuestra herramienta se de seguimiento a cotizaciones en [industrially.net](/).
+Puede ser una hoja de cálculo, un herramienta de kanban como notion o trello, o tal vez con nuestra herramienta se de seguimiento a cotizaciones en [industrially](/).
 
 Tal vez antes de usar esto con todo tu equipo quieras empezar a hacerlo tú solo por tu cuenta, y ya después con el resto de la empresa, para que todos puedan saber el estatus de las solicitudes de cotización de todos y así sustituirse o apoyarse si es necesario.
 
