@@ -49,4 +49,4 @@ Algunas veces puedes verte tentado por solo dejar la conversación en el correo 
 
 ## ¿Dónde pueden llevar este control?
 
-Tal vez pronto en [industrially.net](/) tengamos una herramienta específica para este problema, pero por ahora pueden tenerlo en una hoja de cálculo compartida en la nube, o pueden construir un board en alguna herramienta como notion o trello.
+Tal vez pronto en [industrially](/) tengamos una herramienta específica para este problema, pero por ahora pueden tenerlo en una hoja de cálculo compartida en la nube, o pueden construir un board en alguna herramienta como notion o trello.

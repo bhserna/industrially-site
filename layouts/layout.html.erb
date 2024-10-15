@@ -3,7 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title><%= current_page.data.fetch("title", "Industrially.net") %></title>
+    <title><%= current_page.data.fetch("title", "Industrially") %></title>
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script>
@@ -11,9 +11,9 @@
         theme: {
           extend: {
             colors: {
-              primary: '#1E3A8A',
-              accent: '#3B82F6',
-              background: '#EFF6FF',
+              primary: '#000000',
+              accent: '#333333',
+              background: '#F5F5F5',
               text: '#1F2937',
             },
             fontFamily: {
@@ -40,12 +40,11 @@
   </head>
   <body class="bg-white font-sans text-text">
     <header class="bg-white shadow-sm">
-      <nav class="container mx-auto px-4 py-3 flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center">
-        <div class="flex flex-col">
-          <a href="/" class="text-xl font-bold text-primary">Industrially.net</a>
-          <p class="text-sm text-text opacity-50">Herramientas de software para proveedores industriales</p>
+      <nav class="container mx-auto px-4 py-4 sm:py-6 flex justify-between items-center">
+        <a href="/" class="text-xl sm:text-2xl font-bold text-primary">Industrially</a>
+        <div class="flex items-center space-x-4 sm:space-x-6">
+          <a href="/blog" class="text-base sm:text-lg text-gray-600 hover:text-primary transition duration-300">Blog</a>
         </div>
-        <a href="/blog" class="text-accent hover:text-primary">Blog</a>
       </nav>
     </header> 
     <%= yield %>

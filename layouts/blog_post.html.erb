@@ -3,7 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title><%= current_page.data.fetch("title", "Industrially.net") %></title>
+    <title><%= current_page.data.fetch("title", "Industrially") %></title>
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script>
@@ -11,9 +11,9 @@
         theme: {
           extend: {
             colors: {
-              primary: '#1E3A8A',
-              accent: '#3B82F6',
-              background: '#EFF6FF',
+              primary: '#000000',
+              accent: '#333333',
+              background: '#F5F5F5',
               text: '#1F2937',
             },
             fontFamily: {
@@ -25,9 +25,9 @@
                   maxWidth: 'none',
                   color: '#1F2937',
                   a: {
-                    color: '#3B82F6',
+                    color: '#000000',
                     '&:hover': {
-                      color: '#1E3A8A',
+                      color: '#333333',
                     },
                   },
                 },
@@ -40,16 +40,15 @@
   </head>
   <body class="bg-white font-sans text-text">
     <header class="bg-white shadow-sm">
-      <nav class="container mx-auto px-4 py-3 flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center">
-        <div class="flex flex-col">
-          <a href="/" class="text-xl font-bold text-primary">Industrially.net</a>
-          <p class="text-sm text-text opacity-50">Herramientas de software para proveedores industriales</p>
+      <nav class="container mx-auto px-4 py-4 sm:py-6 flex justify-between items-center">
+        <a href="/" class="text-xl sm:text-2xl font-bold text-primary">Industrially</a>
+        <div class="flex items-center space-x-4 sm:space-x-6">
+          <a href="/blog" class="text-base sm:text-lg text-gray-600 hover:text-primary transition duration-300">Blog</a>
         </div>
-        <a href="/blog" class="text-accent hover:text-primary">Blog</a>
       </nav>
     </header> 
 
-    <main class="container mx-auto px-4 py-8 max-w-2xl">
+    <main class="container mx-auto px-4 py-8 sm:py-12 max-w-2xl">
       <article class="prose prose-sm sm:prose lg:prose-lg mx-auto">
         <h1 class="text-text text-2xl sm:text-3xl lg:text-4xl"><%= current_page.data.title %></h1>
         <p class="text-text opacity-75 text-sm sm:text-base"><%= current_page.data.date.strftime("%B %d, %Y") %></p>
@@ -57,13 +56,13 @@
       </article>
     </main>
 
-    <footer class="bg-gray-100 py-10">
-      <div class="container mx-auto px-4 text-center">
-        <h2 class="text-2xl font-bold mb-4 text-text">¿Quieres optimizar tus ventas?</h2>
-        <p class="mb-4 text-text">Suscríbete para recibir noticias sobre nuestra app de seguimiento de cotizaciones.</p>
-        <a href="/" class="bg-accent hover:bg-primary text-white font-bold py-2 px-4 rounded transition duration-300">
-          Suscribirse
-        </a>
+    <footer class="bg-gray-50 py-8 sm:py-10 md:py-12">
+      <div class="container mx-auto px-4 text-center max-w-3xl">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-text leading-tight">Aprende a usar software para potenciar tu negicio de distribución industrial</h2>
+        <p class="mb-3 sm:mb-4 text-gray-600 text-sm sm:text-base leading-relaxed max-w-xl sm:max-w-2xl mx-auto">Aquí compartimos pequeños tips, consejos y herramientas sobre todo relacionadas al uso de software en negocios de distribución y ventas de equipo industrial.</p>
+        <div class="mx-auto max-w-full sm:max-w-xl md:max-w-2xl mt-6 sm:mt-8">
+          <script async data-uid="5946107901" src="https://bhserna.ck.page/5946107901/index.js"></script>
+        </div>
       </div>
     </footer>
   </body>

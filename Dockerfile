@@ -20,7 +20,7 @@ COPY . .
 RUN bundle exec sitepress build
 
 # Expose port 8080
-EXPOSE 8080
+EXPOSE 80
 
 # Start the server
-CMD ["bundle", "exec", "sitepress", "server", "-p", "8080", "-a", "0.0.0.0"]
+CMD ["bundle", "exec", "sitepress", "server", "-p", "80", "-a", "0.0.0.0"]
