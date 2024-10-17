@@ -4,6 +4,23 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title><%= current_page.data.fetch("title", "Industrially") %></title>
+    <meta name="description" content="<%= current_page.data.fetch("description", "Toma el control del flujo de cotización en tu negocio") %>">
+    <meta name="keywords" content="Industrially, cotizaciones, software para proveedores industriales, gestión de solicitudes, flujo de cotización, equipo industrial, portal de clientes, seguimiento de cotizaciones">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://industrially.net<%= current_page.url %>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<%= current_page.data.fetch("title", "Industrially") %>">
+    <meta property="og:description" content="<%= current_page.data.fetch("description", "Toma el control del flujo de cotización en tu negocio") %>">
+    <meta property="og:image" content="<%= current_page.data.fetch("image", image_url("screenshot-solicitudes-de-cotizacion.png")) %>">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= current_page.data.fetch("title", "Industrially") %>">
+    <meta name="twitter:description" content="<%= current_page.data.fetch("description", "Toma el control del flujo de cotización en tu negocio") %>">
+    <meta property="og:image" content="<%= current_page.data.fetch("image", image_url("screenshot-solicitudes-de-cotizacion.png")) %>">
+
+
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script>
