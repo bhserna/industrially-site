@@ -3,6 +3,7 @@ title: Proceso para dar seguimiento a cotizaciones para proveedores industriales
 date: 2024-08-30
 layout: blog_post
 description: "Como vendedor o proveedor industriales es normal trabajar en base a cotizaciones y enfocarse en cotizar mucho, pero es posible que muchas veces te olvides de dar seguimiento a las cotizaciones que ya hiciste..."
+keywords: "proceso, seguimiento de cotizaciones, cotizaciones, proveedores industriales, Industrially"
 ---
 
 Como vendedor o proveedor industriales es normal trabajar en base a cotizaciones y enfocarse en cotizar mucho, pero es posible que muchas veces te olvides de dar seguimiento a las cotizaciones que ya hiciste.

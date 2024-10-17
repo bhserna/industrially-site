@@ -3,7 +3,29 @@
   <head>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title><%= current_page.data.fetch("title", "Industrially") %></title>
+    <title><%= current_page.data.fetch("title", "Industrially Blog | Aprende a usar software para potenciar tu negocio de distribución industrial") %></title>
+    <meta name="description" content="<%= current_page.data.fetch("description", "Aquí compartimos pequeños tips, consejos y herramientas sobre todo relacionadas al uso de software en negocios de distribución y ventas de equipo industrial.") %>">
+    <meta name="keywords" content="<%= current_page.data.fetch("keywords", "Industrially, cotizaciones, software para proveedores industriales, gestión de solicitudes, flujo de cotización, equipo industrial, portal de clientes, seguimiento de cotizaciones") %>">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="<%= current_page.data.fetch("title", "Industrially Blog | Aprende a usar software para potenciar tu negocio de distribución industrial") %>" />
+    <meta itemprop="description" content="<%= current_page.data.fetch("description", "Aquí compartimos pequeños tips, consejos y herramientas sobre todo relacionadas al uso de software en negocios de distribución y ventas de equipo industrial.") %>" />
+    <meta itemprop="image" content="https://industrially.net<%= current_page.data.fetch("image", image_path("screenshot-solicitudes-de-cotizacion.png")) %>" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://industrially.net<%= current_page.url %>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<%= current_page.data.fetch("title", "Industrially Blog | Aprende a usar software para potenciar tu negocio de distribución industrial") %>">
+    <meta property="og:description" content="<%= current_page.data.fetch("description", "Aquí compartimos pequeños tips, consejos y herramientas sobre todo relacionadas al uso de software en negocios de distribución y ventas de equipo industrial.") %>">
+    <meta property="og:image" content="https://industrially.net<%= current_page.data.fetch("image", image_path("screenshot-solicitudes-de-cotizacion.png")) %>">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= current_page.data.fetch("title", "Industrially Blog | Aprende a usar software para potenciar tu negocio de distribución industrial") %>">
+    <meta name="twitter:description" content="<%= current_page.data.fetch("description", "Aquí compartimos pequeños tips, consejos y herramientas sobre todo relacionadas al uso de software en negocios de distribución y ventas de equipo industrial.") %>">
+    <meta property="og:image" content="https://industrially.net<%= current_page.data.fetch("image", image_path("screenshot-solicitudes-de-cotizacion.png")) %>">
+
+
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script>

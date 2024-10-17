@@ -3,6 +3,7 @@ title: Proceso para dar seguimiento a solicitudes de cotización
 date: 2024-09-30
 layout: blog_post
 description: "Como vendedor de equipo industrial no siempre es posible cotizar inmediatamente todas las solicitudes, algunas veces cotizar toma su tiempo, ya sea porque es trabajo que tienes que hacer personalmente, porque tienes que pedirlo a alguien más de tu equipo o tal vez porque necesitas pedírselo al proveedor. Esto hace que sea muy fácil olvidarse de las solicitudes que tienes pendientes..."
+keywords: "proceso, seguimiento de solicitudes, solicitudes, proveedores industriales, Industrially"
 ---
 
 Como vendedor de equipo industrial no siempre es posible cotizar inmediatamente todas las solicitudes, algunas veces cotizar toma su tiempo, ya sea porque es trabajo que tienes que hacer personalmente, porque tienes que pedirlo a alguien más de tu equipo o tal vez porque necesitas pedírselo al proveedor. Esto hace que sea muy fácil olvidarse de las solicitudes que tienes pendientes.

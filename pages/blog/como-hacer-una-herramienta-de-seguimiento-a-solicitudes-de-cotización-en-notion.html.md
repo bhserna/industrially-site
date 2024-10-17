@@ -3,6 +3,8 @@ title: Como hacer una herramienta de seguimiento a solicitudes de cotización en
 date: 2024-10-07
 layout: blog_post
 description: "Anteriormente compartí un proceso que puedes seguir para dar seguimiento a las solicitudes de cotización que tienes tú o tu equipo. Creo que un proceso así es útil porque no siempre es posible cotizar inmediatamente todas las solicitudes que tenemos y es muy fácil olvidarse de las solicitudes que tienes pendientes..."
+keywords: "herramienta, seguimiento de solicitudes, solicitudes, proveedores industriales, Industrially, notion"
+image: /images/notion-solicitudes-de-cotizacion-2.png
 ---
 
 Anteriormente compartí un proceso que puedes seguir para dar seguimiento a las solicitudes de cotización que tienes tú o tu equipo. Creo que un proceso así es útil porque no siempre es posible cotizar inmediatamente todas las solicitudes que tenemos y es muy fácil olvidarse de las solicitudes que tienes pendientes.
