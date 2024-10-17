@@ -7,6 +7,11 @@
     <meta name="description" content="<%= current_page.data.fetch("description", "Toma el control del flujo de cotización en tu negocio") %>">
     <meta name="keywords" content="Industrially, cotizaciones, software para proveedores industriales, gestión de solicitudes, flujo de cotización, equipo industrial, portal de clientes, seguimiento de cotizaciones">
 
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="<%= current_page.data.fetch("title", "Industrially") %>" />
+    <meta itemprop="description" content="<%= current_page.data.fetch("description", "Toma el control del flujo de cotización en tu negocio") %>" />
+    <meta itemprop="image" content="<%= current_page.data.fetch("image", image_url("screenshot-solicitudes-de-cotizacion.png")) %>" />
+
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://industrially.net<%= current_page.url %>">
     <meta property="og:type" content="website">
