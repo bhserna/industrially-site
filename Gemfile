@@ -12,3 +12,5 @@ gem "sass-rails"
 gem "markdown-rails", "~> 1.0"
 
 gem "rack", "<= 2.2.9"
+
+gem "kamal"
