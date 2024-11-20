@@ -4,7 +4,7 @@ date: 2024-11-19
 layout: blog_post
 description: "Es muy común que en las cotizaciones se maneje el precio de un producto en base a un margen de utilidad deseado. Industrially te permite hacerlo automáticamente, pero si tu quieres hacerlo manualmente, aquí te dejo una fórmula que puedes usar para calcular el precio de un producto en base a un margen de utilidad deseado."
 keywords: "herramienta, cotizaciones, fórmulas, proveedores industriales, Industrially, notion"
-image: /images/notion-solicitudes-de-cotizacion-2.png
+image: /images/como-calcular-precio-en-base-a-utilidad/agregar-partida.png
 ---
 
 Es muy común que en las cotizaciones se maneje el precio de un producto en base a un margen de utilidad deseado. [Industrially](/) te permite hacerlo automáticamente, pero si tu quieres hacerlo manualmente, aquí te dejo una fórmula que puedes usar para calcular el precio de un producto en base a un margen de utilidad deseado.
