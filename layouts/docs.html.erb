@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title><%= current_page.data.fetch("title") %></title>
+    <meta name="description" content="<%= current_page.data.fetch("description") %>">
+    <meta name="keywords" content="<%= current_page.data.fetch("keywords") %>">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="<%= current_page.data.fetch("title") %>" />
+    <meta itemprop="description" content="<%= current_page.data.fetch("description") %>" />
+    <% if image = current_page.data.fetch("image") %>
+      <meta itemprop="image" content="https://industrially.net<%= image %>" />
+    <% end %>
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://industrially.net<%= current_page.url %>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<%= current_page.data.fetch("title") %>">
+    <meta property="og:description" content="<%= current_page.data.fetch("description") %>">
+    <% if image = current_page.data.fetch("image") %>
+      <meta property="og:image" content="https://industrially.net<%= image %>">
+    <% end %>
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= current_page.data.fetch("title") %>">
+    <meta name="twitter:description" content="<%= current_page.data.fetch("description") %>">
+    <% if image = current_page.data.fetch("image") %>
+      <meta property="og:image" content="https://industrially.net<%= image %>">
+    <% end %>
+
+
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <%= render "tailwind_config" %>
+  </head>
+  <body class="bg-white font-sans text-text">
+    <%= render "header" %>
+
+    <main class="container mx-auto px-4 py-8 sm:py-12 max-w-2xl">
+      <article class="mx-auto flex flex-col gap-6">
+        <h1 class="text-2xl sm:text-4xl lg:text-5xl font-bold"><%= current_page.data.title %></h1>
+        <div class="prose prose-sm sm:prose lg:prose-lg">
+          <%= yield %>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

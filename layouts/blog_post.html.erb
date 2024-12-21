@@ -28,50 +28,10 @@
 
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#000000',
-              accent: '#333333',
-              background: '#F5F5F5',
-              text: '#1F2937',
-            },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-            typography: {
-              DEFAULT: {
-                css: {
-                  maxWidth: 'none',
-                  color: '#1F2937',
-                  a: {
-                    color: '#000000',
-                    '&:hover': {
-                      color: '#333333',
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
-      }
-    </script>
+    <%= render "tailwind_config" %>
   </head>
   <body class="bg-white font-sans text-text">
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-      <nav class="container mx-auto px-4 py-4 sm:py-6 flex justify-between items-center max-w-7xl">
-        <a href="/" class="text-xl sm:text-2xl font-bold text-primary">Industrially</a>
-        <div class="flex items-center space-x-4 sm:space-x-6">
-          <a href="/blog" class="text-base sm:text-lg text-gray-600 hover:text-primary transition duration-300">Blog</a>
-          <a href="https://app.industrially.net/accounts/new" class="bg-black text-white px-6 py-3 md:px-4 md:py-2 w-max rounded-full text-sm md:text-lg font-semibold hover:bg-gray-800 transition duration-300">
-            Crear cuenta
-          </a>
-        </div>
-      </nav>
-    </header> 
+    <%= render "header" %>
 
     <main class="container mx-auto px-4 py-8 sm:py-12 max-w-2xl">
       <article class="prose prose-sm sm:prose lg:prose-lg mx-auto">
@@ -81,14 +41,6 @@
       </article>
     </main>
 
-    <footer class="bg-gray-50 py-8 sm:py-10 md:py-12">
-      <div class="container mx-auto px-4 text-center max-w-3xl">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-text leading-tight">Aprende a usar software para potenciar tu negocio de distribución industrial</h2>
-        <p class="mb-3 sm:mb-4 text-gray-600 text-sm sm:text-base leading-relaxed max-w-xl sm:max-w-2xl mx-auto">Aquí compartimos pequeños tips, consejos y herramientas sobre todo relacionadas al uso de software en negocios de distribución y ventas de equipo industrial.</p>
-        <div class="mx-auto max-w-full sm:max-w-xl md:max-w-2xl mt-6 sm:mt-8">
-          <script async data-uid="5946107901" src="https://bhserna.ck.page/5946107901/index.js"></script>
-        </div>
-      </div>
-    </footer>
+    <%= render "newsletter_form" %>
   </body>
 </html>
