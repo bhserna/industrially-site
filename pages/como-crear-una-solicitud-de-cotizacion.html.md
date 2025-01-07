@@ -23,7 +23,7 @@ Si el contacto que solicita la cotización, aún no está registrado, puedes cre
 
 <aside class="p-4 bg-gray-100 rounded-lg">
 💡 En el siguiente artículo se detalla un poco más el proceso para crear un nuevo contacto al crear una solicitud de retiro:
-[Nuevo contacto al crear solicitud de cotización](/docs/nuevo-contacto-al-crear-solicitud-de-cotizacion)
+[Nuevo contacto al crear solicitud de cotización](/nuevo-contacto-al-crear-solicitud-de-cotizacion)
 </aside>
 
 Después podrás llenar los demás campos: Producto, Marca, Número de parte, Cantidad y "Más información" y dar click en "Crear solicitud de cotización".
