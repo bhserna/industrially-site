@@ -12,10 +12,11 @@ description: "Aquí compartimos pequeños tips, consejos y herramientas sobre to
       <% site = Sitepress::Site.new %>
       <% posts = site.resources.glob("blog/*html*").select { _1.data.date.to_date <= Date.current }.sort_by { _1.data.date.to_date }.reverse %>
       <% posts.each do |post| %>
-        <a href="<%= post.request_path %>" class="p-4 sm:p-6 border bg-white rounded-xl shadow-lg flex flex-col gap-2 hover:border-gray-300 transition-colors duration-300">
+        <a href="<%= post.request_path %>" class="p-4 sm:p-6 border border-gray-200 bg-white rounded-xl shadow-lg flex flex-col gap-2 hover:border-gray-300 transition-colors duration-300">
           <div class="prose prose-sm sm:prose lg:prose-lg">
             <h3 class="mb-2"><%= post.data[:title] %></h3>
             <p class="text-gray-500"><%= post.data[:description] %></p>
+            <%= image_tag post.data[:image], class: "w-full h-auto" if post.data[:image] %>
           </div>
         </a>
       <% end %>
