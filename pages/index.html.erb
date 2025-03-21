@@ -1,9 +1,25 @@
 ---
-title: Industrially | Organiza el flujo de cotización de tu empresa
-description: "Plataforma web para proveedores industriales, para organizar solicitudes de cotización, cotizaciones, contactos y clientes, y darles un portal a tus clientes con su información."
+title: Industrially | Plataforma para proveedores industriales
+description: "Plataforma para proveedores industriales, administración de cotizaciones, solicitudes, catálog de productos, clientes, contactos, portal para clientes"
 ---
 
-<!-- Hero Section -->
+<script>
+  function resetButtons(galleryId) {
+    window[galleryId].querySelectorAll("button").forEach(button => button.classList.remove("border", "border-gray-500"));
+  }
+
+  function buttonWithId(galleryId, id) {
+    return window[galleryId].querySelector("button[data-id='"+id+"']");
+  }
+
+  function setImage(galleryId, id) {
+    const selectedButton = buttonWithId(galleryId, id)
+    window[galleryId].querySelector("img").src = selectedButton.querySelector("img").src;
+    resetButtons(galleryId);
+    selectedButton.classList.add("border", "border-gray-500");
+  }
+</script>
+
 <section class="bg-white py-12 sm:py-16 lg:py-20">
   <div class="container mx-auto px-4 max-w-4xl">
     <div class="flex flex-col items-center text-center">
@@ -13,233 +29,200 @@ description: "Plataforma web para proveedores industriales, para organizar solic
       <h1 class="text-2xl sm:text-4xl lg:text-6xl font-bold mb-6">
         Organiza el flujo de cotización de tu empresa
       </h1>
-      <p class="text-base sm:text-lg lg:text-2xl text-gray-600 max-w-2xl mb-6">
-        Plataforma simple para distribuidores industriales para administrar solicitudes de cotización y cotizar eficientemente
+      <p class="text-base text-lg lg:text-2xl text-gray-600 max-w-2xl mb-6">
+        Plataforma simple para distribuidores industriales para administrar solicitudes de cotización, cotizar eficientemente y publicar un catálogo de productos.
       </p>
-      <a href="https://app.industrially.net/accounts/new" target="_blank" class="inline-block bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg lg:text-xl font-semibold hover:bg-gray-800 transition duration-300 mb-12">
-        Pruébalo gratis, ordena tu proceso de cotización hoy
-      </a>
-      <div class="grid grid-cols-2 gap-4 mt-8">
-        <img src="home/hero1.png" alt="Industrially dashboard" class="w-full h-auto rounded-xl shadow-lg">
-        <img src="home/hero2.png" alt="Industrially dashboard" class="w-full h-auto rounded-xl shadow-lg">
-        <img src="home/hero3.png" alt="Industrially dashboard" class="w-full h-auto rounded-xl shadow-lg">
-        <img src="home/hero4.png" alt="Industrially dashboard" class="w-full h-auto rounded-xl shadow-lg">
-      </div>
+      <%= render "home/button" %>
+      <%= render "home/gallery", gallery_id: "hero_gallery", image_urls: %w[home/hero1.png home/hero2.png home/hero3.png home/hero4.png] %>
     </div>
   </div>
 </section>
 
-<!-- Why Use Section -->
-<section class="bg-gray-50 py-16 sm:py-20 lg:py-24">
-  <div class="container mx-auto px-4 max-w-4xl">
-    <h2 class="text-2xl sm:text-4xl lg:text-6xl font-bold mb-12 text-center">¿Por qué usar Industrially?</h2>
-    
-    <div class="bg-white rounded-2xl p-8 sm:p-12">
-      <div class="space-y-12">
-        <!-- Pain Points -->
-        <div class="flex items-start space-x-4">
-          <svg class="w-6 h-6 text-red-500 mt-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-          <p class="text-base sm:text-lg lg:text-xl text-gray-600">¿Reciben solicitudes y envían cotizaciones por todos lados? ¿Cotizar es lento y propenso a errores? ¿Sienten que mucho de lo que dejan de vender es por falta de seguimiento?</p>
-        </div>
 
-        <!-- Desires -->
-        <div class="flex items-start space-x-4">
-          <span class="text-2xl mt-1 flex-shrink-0">🤔</span>
-          <p class="text-base sm:text-lg lg:text-xl text-gray-600">¿Te gustaría tener las solicitudes de cotización en un solo lugar? ¿Poder cotizar en minutos? ¿Que tus clientes se sientan siempre atendidos?</p>
-        </div>
+<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+  <h3 class="text-xl lg:text-3xl font-bold text-center">¿Alguno de estos problemas?</h3>
 
-        <p class="text-xl sm:text-2xl lg:text-3xl font-medium text-center">¡Industrially te puede ayudar!</p>
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">¿Cartera muy demandante? ¿Solicitudes por todos lados?… es normal escuchar "¿Dónde esta mi cotización?"</h2>
 
-        <!-- Benefits -->
-        <div class="space-y-4">
-          <div class="flex items-start">
-            <svg class="w-6 h-6 text-green-500 mt-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <p class="ml-4 text-base sm:text-lg lg:text-xl text-gray-600">Centraliza todas tus solicitudes en un solo lugar</p>
-          </div>
-          <div class="flex items-start">
-            <svg class="w-6 h-6 text-green-500 mt-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <p class="ml-4 text-base sm:text-lg lg:text-xl text-gray-600">Cotiza de manera rápida y precisa</p>
-          </div>
-          <div class="flex items-start">
-            <svg class="w-6 h-6 text-green-500 mt-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <p class="ml-4 text-base sm:text-lg lg:text-xl text-gray-600">Da seguimiento efectivo a cada oportunidad</p>
-          </div>
-          <div class="flex items-start">
-            <svg class="w-6 h-6 text-green-500 mt-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <p class="ml-4 text-base sm:text-lg lg:text-xl text-gray-600">Conviértete en el proveedor preferido</p>
-          </div>
-        </div>
-      </div>
+    <p class="text-lg lg:text-xl">
+    Reciben solicitudes por todos lados, por whatsapp, correo, llamada, en
+    visitas… cada quien lleva su propia lista de solicitudes, no es fácil llevar
+    control de lo que se ha hecho y lo que no. Muchas veces los clientes
+    preguntan por su cotización, pero ustedes no recordaban que habían pedido
+    algo.
+    </p>
+  </div>
 
-      <div class="text-center mt-12">
-        <a href="https://app.industrially.net/accounts/new" target="_blank" class="inline-block bg-black text-white px-6 py-3 rounded-full text-base sm:text-lg lg:text-xl font-semibold hover:bg-gray-800 transition duration-300">
-          Pruébalo gratis, ordena tu proceso de cotización hoy
-        </a>
-      </div>
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">¿Cotizar es lento y propenso a errores? ¿No tienen visibilidad de lo cotizado?</h2>
+
+    <p class="text-lg lg:text-xl">Hacen sus cotizaciones en excel o en alguna hoja de
+    cálculo en la que fácilmente se pueden modificar las fórmulas. No hay un
+    lugar centralizado para poder ver todas las cotizaciones.</p>
+
+    <p class="text-lg lg:text-xl">O tal vez sí tienen un sistema para cotizar, pero
+    requiere tener todos los productos que ofrecen dados de alta y que los
+    vendedores conozcan el código de cada producto. Es difícil navegar por las
+    cotizaciones realizadas y ver lo que ha cotizado cada vendedor.</p>
+  </div>
+
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">¿Sienten que mucho de lo que dejan de vender es por falta de seguimiento?</h2>
+
+    <p class="text-lg lg:text-xl">Dan seguimiento solo a las cotizaciones "grandes" y sienten que pueden dejar ir nuevos clientes importantes por no dar buen servicio en las "pequeñas". No tienen un proceso para dar seguimiento, o lo tienen pero es "muy manual".</p>
+  </div>
+
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">¿Tu sitio web y catálogo no es realmente lo que quisieran?</h2>
+
+    <p class="text-lg lg:text-xl">Tu sitio es más un requisito que una herramienta, tal vez no recuerdan cuando fue la última vez que lo actualizaron. Actualizar cualquier cosa es una tarea de semanas, de hablar al proveedor, hacer juntas, correos, llamadas, frustraciones…</p>
+  </div>
+</div>
+
+<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+  <h3 class="text-xl lg:text-3xl font-bold text-center">¿Qué pasaría si...?</h3>
+
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">¿Qué pasaría si tuvieran todas las solicitudes en un mismo lugar?</h2>
+
+    <p class="text-lg lg:text-xl">Imagina saber rápidamente el estatus de cada solicitud, saber qué se ha cotizado y qué está pendiente. Ver todas las cotizaciones relacionadas a cada solicitud.</p>
+
+    <p class="text-lg lg:text-xl">Que tus clientes puedan acceder directamente a un portal sencillo que les permita solicitar cotizaciones y ver el estatus de cada solicitud. Que puedan ver lo que ellos solicitan, pero también lo que han solicitado otros contactos de su misma empresa. Todo el historial de la relación con tu empresa.</p>
+  </div>
+
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">¿Que pasaría si pudieran cotizar en minutos?</h2>
+
+    <p class="text-lg lg:text-xl">Imagina poder tener un estándar en todas las cotizaciones de tus vendedores, que tus vendedores tengan fácil acceso a todas las cotizaciones realizadas por todo el equipo y fácilmente usarlas como referencia para hacer nuevas cotizaciones. Sentir confianza de que las cotizaciones usan la fórmulas, las leyendas y comentarios correctos.</p>
+  </div>
+
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">¿Que pasaría si pudieran dar seguimiento a todas las cotizaciones?</h2>
+
+    <p class="text-lg lg:text-xl">Imagina siempre saber qué cotizaciones están activas, las que están por vencer, en qué estatus está cada cliente según cada cotización. Llevar este control general en todas las cotizaciones realizadas por tu empresa, pero también de forma granular por cliente o contacto.</p>
+  </div>
+
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">¿Qué pasaría si pudieras tener todos tus productos en tu sitio web?</h2>
+
+    <p class="text-lg lg:text-xl">Poder crear páginas de tus productos, categorías y marcas, que ayuden a tu empresa a comunicar lo que ofrecen a sus clientes. Que cada página sirva como herramienta de promoción y para facilitar la solicitud de cotización.</p>
+  </div>
+</div>
+
+<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+  <h3 class="text-xl lg:text-3xl font-bold text-center">Transforma el flujo de cotización de tu empresa</h3>
+
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <p class="text-lg lg:text-xl">Empieza el camino de transformación de tu empresa con <strong>Industrially.</strong></p>
+
+    <ul class="list-disc list-inside text-lg lg:text-xl">
+      <li>Centraliza las solicitudes de cotización</li>
+      <li>Agiliza la generación de cotizaciones</li>
+      <li>Da seguimiento efectivo a cada cotización</li>
+      <li>Crea un catálogo de productos</li>
+      <li>Da un portal a tus clientes</li>
+    </ul>
+
+    <p class="text-lg lg:text-xl">Con <strong>Industrially</strong> tendrás las herramientas necesarias para transformar tu flujo de cotización hoy.</p>
+
+    <div class="flex justify-center">
+      <%= render "home/button" %>
     </div>
   </div>
-</section>
+</div>
 
-<!-- How it Works Section -->
-<section class="bg-white py-16 sm:py-20 lg:py-24">
-  <div class="container mx-auto px-4 max-w-4xl">
-    <h2 class="text-2xl sm:text-4xl lg:text-6xl font-bold mb-16 text-center">¿Cómo funciona?</h2>
+<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">Centraliza las solicitudes de cotización</h2>
 
-    <!-- Features -->
-    <div class="space-y-24">
-      <!-- Feature 1 -->
-      <div class="bg-gray-50 rounded-2xl p-8 sm:p-12">
-        <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-6">Conecta tu sitio web para recibir solicitudes de cotización directamente</h3>
-        <p class="text-base sm:text-lg lg:text-xl text-gray-600 mb-8">Desde tu sitio web lleva a tus clientes a la forma de solicitud de cotización de industrially. Industrially recordará la información de tus clientas para que no tengan que llenas sus datos en cada solicitud</p>
-        <img src="home/conectar.png" alt="Conectar tu sitio web" class="w-full h-auto rounded-xl shadow-lg mb-8">
-        <div class="text-center">
-          <a href="https://app.industrially.net/accounts/new" target="_blank" class="inline-block bg-black text-white px-6 py-3 rounded-full text-base sm:text-lg lg:text-xl font-semibold hover:bg-gray-800 transition duration-300">
-            Pruébalo gratis, conecta tu sitio web hoy
-          </a>
-        </div>
-      </div>
+    <p class="text-lg lg:text-xl">Un solo lugar con todas las solicitudes de cotización de tu empresa, al que también tus clientes pueden acceder.</p>
 
-      <!-- Feature 2 -->
-      <div class="bg-gray-50 rounded-2xl p-8 sm:p-12">
-        <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-6">Centraliza y da seguimento a solicitudes de cotización</h3>
-        <p class="text-base sm:text-lg lg:text-xl text-gray-600 mb-8">Industrially te puede ayudar a recibir solicitudes directamente de tus clientes, pero también permite a tu equipo de vendedores capturar solicitudes recibidas por otros medios. Permite asignar responsables, llevar control del estatus y dejar notas para ayudar al seguimiento para solicitudes que toman algo de tiempo para cotizar.</p>
-        <img src="home/solicitudes-de-cotizacion.png" alt="Solicitudes de cotización" class="w-full h-auto rounded-xl shadow-lg mb-8">
-        <div class="text-center">
-          <a href="https://app.industrially.net/accounts/new" target="_blank" class="inline-block bg-black text-white px-6 py-3 rounded-full text-base sm:text-lg lg:text-xl font-semibold hover:bg-gray-800 transition duration-300">
-            Pruébalo gratis, empieza a centralizar tus solicitudes de cotización hoy
-          </a>
-        </div>
-      </div>
+    <%= render "home/gallery", gallery_id: "gallery2", image_urls: %w[home/hero1.png home/hero4.png] %>
 
-      <!-- Feature 3 -->
-      <div class="bg-gray-50 rounded-2xl p-8 sm:p-12">
-        <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-6">Genera cotizaciones eficientemente</h3>
-        <p class="text-base sm:text-lg lg:text-xl text-gray-600 mb-8">Con industrially podrás fácilmente crear cotizaciones a partir de las solicitudes recibidas. Podrás calcular el precio automáticamente en base a un precio de lista, factores de costos y una utilidad deseada. Podrás duplicar partidas desde la misma cotización e importar partidas de cotizaciones anteriores.</p>
-        <img src="home/cotizar.png" alt="Cotizar" class="w-full h-auto rounded-xl shadow-lg mb-8">
-        <div class="text-center">
-          <a href="https://app.industrially.net/accounts/new" target="_blank" class="inline-block bg-black text-white px-6 py-3 rounded-full text-base sm:text-lg lg:text-xl font-semibold hover:bg-gray-800 transition duration-300">
-            Pruébalo gratis, mejora tu proceso de cotización hoy
-          </a>
-        </div>
-      </div>
-
-      <!-- Feature 4 -->
-      <div class="bg-gray-50 rounded-2xl p-8 sm:p-12">
-        <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-6">Da seguimiento a cotizaciónes realizadas</h3>
-        <p class="text-base sm:text-lg lg:text-xl text-gray-600 mb-8">Con industrially tendrás fácil acceso a todas las cotizaciones realizadas en la empresa, con la capacidad de buscar por cualquier atributo, filtrar por estatus y navegar por las cotizaciones de tus clientes y contactos. Industrially automáticamente actualizará el estatus de vigencia de las cotizaciones. Podrás dejar notas en las cotizaciones para documentar aprendizajes y comentarios sobre las conversaciones con los clientes.</p>
-        <img src="home/seguimiento-a-cotizaciones.png" alt="Seguimiento a cotizaciones" class="w-full h-auto rounded-xl shadow-lg mb-8">
-        <div class="text-center">
-          <a href="https://app.industrially.net/accounts/new" target="_blank" class="inline-block bg-black text-white px-6 py-3 rounded-full text-base sm:text-lg lg:text-xl font-semibold hover:bg-gray-800 transition duration-300">
-            Pruébalo gratis, ordena tu proceso de seguimiento a cotizaciones hoy
-          </a>
-        </div>
-      </div>
-
-      <!-- Feature 5 -->
-      <div class="bg-gray-50 rounded-2xl p-8 sm:p-12">
-        <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-6">Permite a tus clientes acceso a sus solicitudes y cotizaciones</h3>
-        <p class="text-base sm:text-lg lg:text-xl text-gray-600 mb-8">Industrially permitirá ofrecerles un portal a tus clientes para que fácilmente puedan solicitar nuevas cotizaciones y acceder al historial de solicitudes y cotizaciones de toda su empresa. Aparte dando click a un botón podrán fácilmente solicitar la actualización de una partida.</p>
-        <img src="home/portal-para-clientes.png" alt="Portal para clientes" class="w-full h-auto rounded-xl shadow-lg mb-8">
-        <div class="text-center">
-          <a href="https://app.industrially.net/accounts/new" target="_blank" class="inline-block bg-black text-white px-6 py-3 rounded-full text-base sm:text-lg lg:text-xl font-semibold hover:bg-gray-800 transition duration-300">
-            Pruébalo gratis, crea un portal para mostrar su información a tus clientes
-          </a>
-        </div>
-      </div>
+    <div class="flex justify-center">
+      <%= render "home/button" %>
     </div>
   </div>
-</section>
+</div>
 
-<!-- How to Start Section -->
-<section class="bg-gray-50 py-16 sm:py-20 lg:py-24">
-  <div class="container mx-auto px-4 max-w-4xl">
-    <h2 class="text-2xl sm:text-4xl lg:text-6xl font-bold mb-12 text-center">¿Cómo empezar?</h2>
-    <div class="bg-white rounded-2xl p-8 sm:p-12">
-      <ol class="list-decimal list-inside space-y-4 text-base sm:text-lg lg:text-xl text-gray-600 ml-4">
-        <li>Crea tu cuenta</li>
-        <li>Prueba la creación de una solicitud y una cotización a partir de ella</li>
-        <li>Creas tus primeras solicitudes y cotizaciones reales</li>
-        <li>Agrega el logo y colores de tu empresa</li>
-        <li>Configura las condiciones por defecto para tus cotizaciones</li>
-        <li>Invita a tu equipo</li>
-        <li>Conecta tu sitio web</li>
-      </ol>
-      <div class="text-center mt-12">
-        <a href="https://app.industrially.net/accounts/new" target="_blank" class="inline-block bg-black text-white px-6 py-3 rounded-full text-base sm:text-lg lg:text-xl font-semibold hover:bg-gray-800 transition duration-300">
-          Pruébalo gratis, empieza a organizar tu proceso hoy
-        </a>
-      </div>
+<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">Agiliza las generación de cotizaciones</h2>
+
+    <p class="text-lg lg:text-xl">Genera cotizaciones en base a una utilidad deseada, con cálculos automáticos, capacidad de importar partidas de cotizaciones pasadas.</p>
+
+    <%= render "home/gallery", gallery_id: "gallery3", image_urls: %w[home/hero3.png home/cotizar.png] %>
+
+    <div class="flex justify-center">
+      <%= render "home/button" %>
     </div>
   </div>
-</section>
+</div>
 
-<!-- Pricing Section -->
-<section class="bg-white py-16 sm:py-20 lg:py-24">
-  <div class="container mx-auto px-4 max-w-4xl">
-    <h2 class="text-2xl sm:text-4xl lg:text-6xl font-bold mb-12 text-center">Precio</h2>
-    <div class="bg-gray-50 rounded-2xl p-8 sm:p-12">
-      <div class="space-y-8">
-        <div>
-          <p class="text-base sm:text-lg lg:text-xl text-gray-600">Pruébalo gratis y sin compromiso por 30 días. No se requiere tarjeta de crédito.</p>
-          <p class="text-base sm:text-lg lg:text-xl text-gray-600 mt-2">Ideal para equipos de todos los tamaños.</p>
-        </div>
-        
-        <div class="space-y-4">
-          <div class="flex items-start">
-            <svg class="w-6 h-6 text-green-500 mt-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <p class="ml-4 text-base sm:text-lg lg:text-xl text-gray-600">Administración de solicitudes de cotización</p>
-          </div>
-          <div class="flex items-start">
-            <svg class="w-6 h-6 text-green-500 mt-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <p class="ml-4 text-base sm:text-lg lg:text-xl text-gray-600">Administración y generación de cotizaciones</p>
-          </div>
-          <div class="flex items-start">
-            <svg class="w-6 h-6 text-green-500 mt-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <p class="ml-4 text-base sm:text-lg lg:text-xl text-gray-600">Administración de contactos y clientes</p>
-          </div>
-          <div class="flex items-start">
-            <svg class="w-6 h-6 text-green-500 mt-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <p class="ml-4 text-base sm:text-lg lg:text-xl text-gray-600">Administración de miembros de tu equipo</p>
-          </div>
-          <div class="flex items-start">
-            <svg class="w-6 h-6 text-green-500 mt-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <p class="ml-4 text-base sm:text-lg lg:text-xl text-gray-600">Portal para tus clientes y contactos</p>
-          </div>
-        </div>
+<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">Da seguimiento efectivo a cada cotización</h2>
 
-        <div class="bg-white p-8 rounded-xl text-center">
-          <p class="text-xl sm:text-2xl lg:text-3xl font-bold mb-2">Cobro mensual de $2,000 MXN/mes</p>
-          <p class="text-base sm:text-lg lg:text-xl text-gray-600">Precio fijo para toda tu organización. Incluye usuarios ilimitados.</p>
-        </div>
+    <p class="text-lg lg:text-xl">Ten a la mano todas las cotizaciones de la empresa, filtra por estatus o por su contenido, ten a la mano las fechas de creación y vencimiento, filtra por cliente o contacto, deja notas sobre el proceso…</p>
 
-        <div class="text-center">
-          <a href="https://app.industrially.net/accounts/new" target="_blank" class="inline-block bg-black text-white px-6 py-3 rounded-full text-base sm:text-lg lg:text-xl font-semibold hover:bg-gray-800 transition duration-300">
-            Pruébalo gratis, toma el control hoy
-          </a>
-        </div>
-      </div>
+    <%= render "home/gallery", gallery_id: "gallery4", image_urls: %w[home/hero2.png home/seguimiento-a-cotizaciones.png] %>
+
+    <div class="flex justify-center">
+      <%= render "home/button" %>
     </div>
   </div>
-</section>
+</div>
 
-<%= render "newsletter_form" %>
+<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">Crea un catálogo de productos</h2>
+
+    <p class="text-lg lg:text-xl">Agrega páginas para tus productos, marcas y categorías. Agrega fotos, documentos y una descripción detallada de forma sencilla.</p>
+
+    <%= render "home/gallery", gallery_id: "gallery5", image_urls: %w[home/home-demo.png home/pagina-marca-real.png home/pagina-producto-real.png] %>
+
+    <div class="flex justify-center">
+      <%= render "home/button" %>
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">Precios</h2>
+
+    <p class="text-lg lg:text-xl font-semibold">Pruébalo gratis y sin compromiso hasta tus primeras 10 solicitudes de cotización.</p>
+
+    <p class="text-lg lg:text-xl">Todas las funcionalidades están incluidas en todos los paquetes:</p>
+
+    <ul class="list-disc list-inside text-lg lg:text-xl">
+      <li>Solicitudes de cotización</li>
+      <li>Cotizaciones</li>
+      <li>Catálogo de productos</li>
+      <li>Clientes y contactos</li>
+      <li>Portal para clientes</li>
+    </ul>
+
+    <p class="text-lg lg:text-xl">El precio cambia por la cantidad de miembros en el equipo.</p>
+
+    <div class="flex flex-col gap-2 lg:gap-4">
+      <div class="border border-gray-300 rounded-lg p-4 flex flex-col gap-2">
+        <p class="text-lg lg:text-xl text-gray-500">1 miembro en el equipo</p>
+        <p class="text-lg lg:text-xl"><strong>$500 MXN/mes</strong></p>
+      </div>
+      <div class="border border-gray-300 rounded-lg p-4 flex flex-col gap-2">
+        <p class="text-lg lg:text-xl text-gray-500">Hasta 10 miembros en el equipo</p>
+        <p class="text-lg lg:text-xl"><strong>$2,000 MXN/mes</strong></p>
+      </div>
+      <div class="border border-gray-300 rounded-lg p-4 flex flex-col gap-2">
+        <p class="text-lg lg:text-xl text-gray-500">Miembros ilimitados en el equipo</p>
+        <p class="text-lg lg:text-xl"><strong>$8,000 MXN/mes</strong></p>
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <%= render "home/button" %>
+    </div>
+  </div>
+</div>
