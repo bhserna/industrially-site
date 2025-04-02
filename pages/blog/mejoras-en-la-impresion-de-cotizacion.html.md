@@ -2,7 +2,7 @@
 title: Mejoras en la impresión de una cotización
 date: 2025-04-01
 layout: blog_post
-description: "Más lejible, mejor corte en los bloques al cambiar de hoja"
+description: "Hicimos un cambio para aumentar un poco el tamaño de la letra y tratar de evitar que se rompa una partida al cambiar la hoja."
 keywords: "cotización, industrially, impresión"
 image: "/blog/mejoras-en-la-impresion-de-cotizacion/inicio-cotizacion.png"
 ---
