@@ -20,20 +20,25 @@ description: "Plataforma para proveedores industriales, administración de cotiz
   }
 </script>
 
+<% btn_class = "inline-block bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base text-lg lg:text-xl font-semibold hover:bg-gray-800 transition duration-300" %>
+
 <section class="bg-white py-12 sm:py-16 lg:py-20">
   <div class="container mx-auto px-4 max-w-4xl">
     <div class="flex flex-col items-center text-center">
       <span class="text-xs sm:text-sm md:text-base font-medium text-gray-600 bg-gray-100 px-4 py-2 rounded-full mb-8">
         Para proveedores industriales
       </span>
-      <h1 class="text-2xl sm:text-4xl lg:text-6xl font-bold mb-6">
-        Organiza el flujo de cotización de tu empresa
+      <h1 class="text-2xl sm:text-4xl lg:text-5xl font-bold mb-6">
+        Sitio web con catálogo de productos, flujo de cotización y portal para clientes
       </h1>
-      <p class="text-base text-lg lg:text-2xl text-gray-600 max-w-2xl mb-6">
-        Plataforma para ayudar a los proveedores industriales a administrar solicitudes de cotización, cotizar eficientemente y publicar un catálogo de productos.
+      <p class="text-base text-lg lg:text-xl text-gray-500 max-w-2xl mb-6">
+        Plataforma para ayudar a los proveedores industriales a construir un sitio web con catálogo de productos, administrar solicitudes de cotización, cotizar eficientemente y dar un portal a sus clientes.
       </p>
-      <%= render "home/button" %>
-      <%= render "home/gallery", gallery_id: "hero_gallery", image_urls: %w[home/hero1.png home/hero2.png home/hero3.png home/hero4.png home/home-demo.png] %>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <%= link_to("Crear cuenta gratis", "https://app.industrially.net/accounts/new", class: btn_class) %>
+        <%= link_to("Visitar sitio demo", "https://demo.industrially.net", target: "_blank", class: btn_class) %>
+      </div>
+      <%= render "home/gallery", gallery_id: "hero_gallery", image_urls: %w[home/home-demo.png home/hero1.png home/hero2.png home/hero3.png home/hero4.png] %>
     </div>
   </div>
 </section>
@@ -41,6 +46,12 @@ description: "Plataforma para proveedores industriales, administración de cotiz
 
 <div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
   <h3 class="text-xl lg:text-3xl font-bold text-center">¿Alguno de estos problemas?</h3>
+
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">¿Tu sitio web y catálogo no es realmente lo que quisieran?</h2>
+
+    <p class="text-lg lg:text-xl">Tu sitio es más un requisito que una herramienta, tal vez no recuerdan cuando fue la última vez que lo actualizaron. Actualizar cualquier cosa es una tarea de semanas, de hablar al proveedor, hacer juntas, correos, llamadas, frustraciones…</p>
+  </div>
 
   <div class="flex flex-col gap-2 lg:gap-4">
     <h2 class="text-lg lg:text-2xl font-bold">¿Cartera muy demandante? ¿Solicitudes por todos lados?… es normal escuchar "¿Dónde esta mi cotización?"</h2>
@@ -72,16 +83,16 @@ description: "Plataforma para proveedores industriales, administración de cotiz
 
     <p class="text-lg lg:text-xl">Dan seguimiento solo a las cotizaciones "grandes" y sienten que pueden dejar ir nuevos clientes importantes por no dar buen servicio en las "pequeñas". No tienen un proceso para dar seguimiento, o lo tienen pero es "muy manual".</p>
   </div>
-
-  <div class="flex flex-col gap-2 lg:gap-4">
-    <h2 class="text-lg lg:text-2xl font-bold">¿Tu sitio web y catálogo no es realmente lo que quisieran?</h2>
-
-    <p class="text-lg lg:text-xl">Tu sitio es más un requisito que una herramienta, tal vez no recuerdan cuando fue la última vez que lo actualizaron. Actualizar cualquier cosa es una tarea de semanas, de hablar al proveedor, hacer juntas, correos, llamadas, frustraciones…</p>
-  </div>
 </div>
 
 <div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
   <h3 class="text-xl lg:text-3xl font-bold text-center">¿Qué pasaría si...?</h3>
+
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">¿Qué pasaría si pudieras tener todos tus productos en tu sitio web?</h2>
+
+    <p class="text-lg lg:text-xl">Poder crear páginas de tus productos, categorías y marcas, que ayuden a tu empresa a comunicar lo que ofrecen a sus clientes. Que cada página sirva como herramienta de promoción y para facilitar la solicitud de cotización.</p>
+  </div>
 
   <div class="flex flex-col gap-2 lg:gap-4">
     <h2 class="text-lg lg:text-2xl font-bold">¿Qué pasaría si tuvieran todas las solicitudes en un mismo lugar?</h2>
@@ -102,12 +113,6 @@ description: "Plataforma para proveedores industriales, administración de cotiz
 
     <p class="text-lg lg:text-xl">Imagina siempre saber qué cotizaciones están activas, las que están por vencer, en qué estatus está cada cliente según cada cotización. Llevar este control general en todas las cotizaciones realizadas por tu empresa, pero también de forma granular por cliente o contacto.</p>
   </div>
-
-  <div class="flex flex-col gap-2 lg:gap-4">
-    <h2 class="text-lg lg:text-2xl font-bold">¿Qué pasaría si pudieras tener todos tus productos en tu sitio web?</h2>
-
-    <p class="text-lg lg:text-xl">Poder crear páginas de tus productos, categorías y marcas, que ayuden a tu empresa a comunicar lo que ofrecen a sus clientes. Que cada página sirva como herramienta de promoción y para facilitar la solicitud de cotización.</p>
-  </div>
 </div>
 
 <div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
@@ -117,59 +122,17 @@ description: "Plataforma para proveedores industriales, administración de cotiz
     <p class="text-lg lg:text-xl">Empieza el camino de transformación de tu empresa con <strong>Industrially.</strong></p>
 
     <ul class="list-disc list-inside text-lg lg:text-xl">
+      <li>Crea un catálogo de productos</li>
+      <li>Da un portal a tus clientes</li>
       <li>Centraliza las solicitudes de cotización</li>
       <li>Agiliza la generación de cotizaciones</li>
       <li>Da seguimiento efectivo a cada cotización</li>
-      <li>Crea un catálogo de productos</li>
-      <li>Da un portal a tus clientes</li>
     </ul>
 
     <p class="text-lg lg:text-xl">Con <strong>Industrially</strong> tendrás las herramientas necesarias para transformar tu flujo de cotización hoy.</p>
 
     <div class="flex justify-center">
-      <%= render "home/button" %>
-    </div>
-  </div>
-</div>
-
-<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
-  <div class="flex flex-col gap-2 lg:gap-4">
-    <h2 class="text-lg lg:text-2xl font-bold">Centraliza las solicitudes de cotización</h2>
-
-    <p class="text-lg lg:text-xl">Un solo lugar con todas las solicitudes de cotización de tu empresa, al que también tus clientes pueden acceder.</p>
-
-    <%= render "home/gallery", gallery_id: "gallery2", image_urls: %w[home/hero1.png home/hero4.png] %>
-
-    <div class="flex justify-center">
-      <%= render "home/button" %>
-    </div>
-  </div>
-</div>
-
-<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
-  <div class="flex flex-col gap-2 lg:gap-4">
-    <h2 class="text-lg lg:text-2xl font-bold">Agiliza las generación de cotizaciones</h2>
-
-    <p class="text-lg lg:text-xl">Genera cotizaciones en base a una utilidad deseada, con cálculos automáticos, capacidad de importar partidas de cotizaciones pasadas.</p>
-
-    <%= render "home/gallery", gallery_id: "gallery3", image_urls: %w[home/hero3.png home/cotizar.png] %>
-
-    <div class="flex justify-center">
-      <%= render "home/button" %>
-    </div>
-  </div>
-</div>
-
-<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
-  <div class="flex flex-col gap-2 lg:gap-4">
-    <h2 class="text-lg lg:text-2xl font-bold">Da seguimiento efectivo a cada cotización</h2>
-
-    <p class="text-lg lg:text-xl">Ten a la mano todas las cotizaciones de la empresa, filtra por estatus o por su contenido, ten a la mano las fechas de creación y vencimiento, filtra por cliente o contacto, deja notas sobre el proceso…</p>
-
-    <%= render "home/gallery", gallery_id: "gallery4", image_urls: %w[home/hero2.png home/seguimiento-a-cotizaciones.png] %>
-
-    <div class="flex justify-center">
-      <%= render "home/button" %>
+      <%= link_to("Crear cuenta gratis", "https://app.industrially.net/accounts/new", class: btn_class) %>
     </div>
   </div>
 </div>
@@ -183,46 +146,73 @@ description: "Plataforma para proveedores industriales, administración de cotiz
     <%= render "home/gallery", gallery_id: "gallery5", image_urls: %w[home/home-demo.png home/pagina-marca-real.png home/pagina-producto-real.png] %>
 
     <div class="flex justify-center">
-      <%= render "home/button" %>
+      <%= link_to("Crear cuenta gratis", "https://app.industrially.net/accounts/new", class: btn_class) %>
     </div>
   </div>
 </div>
 
 <div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
   <div class="flex flex-col gap-2 lg:gap-4">
-    <h2 class="text-lg lg:text-2xl font-bold">Precios</h2>
+    <h2 class="text-lg lg:text-2xl font-bold">Centraliza las solicitudes de cotización</h2>
+
+    <p class="text-lg lg:text-xl">Un solo lugar con todas las solicitudes de cotización de tu empresa, al que también tus clientes pueden acceder.</p>
+
+    <%= render "home/gallery", gallery_id: "gallery2", image_urls: %w[home/hero1.png home/hero4.png] %>
+
+    <div class="flex justify-center">
+      <%= link_to("Crear cuenta gratis", "https://app.industrially.net/accounts/new", class: btn_class) %>
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">Agiliza las generación de cotizaciones</h2>
+
+    <p class="text-lg lg:text-xl">Genera cotizaciones en base a una utilidad deseada, con cálculos automáticos, capacidad de importar partidas de cotizaciones pasadas.</p>
+
+    <%= render "home/gallery", gallery_id: "gallery3", image_urls: %w[home/hero3.png home/cotizar.png] %>
+
+    <div class="flex justify-center">
+      <%= link_to("Crear cuenta gratis", "https://app.industrially.net/accounts/new", class: btn_class) %>
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">Da seguimiento efectivo a cada cotización</h2>
+
+    <p class="text-lg lg:text-xl">Ten a la mano todas las cotizaciones de la empresa, filtra por estatus o por su contenido, ten a la mano las fechas de creación y vencimiento, filtra por cliente o contacto, deja notas sobre el proceso…</p>
+
+    <%= render "home/gallery", gallery_id: "gallery4", image_urls: %w[home/hero2.png home/seguimiento-a-cotizaciones.png] %>
+
+    <div class="flex justify-center">
+      <%= link_to("Crear cuenta gratis", "https://app.industrially.net/accounts/new", class: btn_class) %>
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+  <div class="flex flex-col gap-2 lg:gap-4">
+    <h2 class="text-lg lg:text-2xl font-bold">Precio</h2>
 
     <p class="text-lg lg:text-xl font-semibold">Pruébalo gratis y sin compromiso hasta tus primeras 10 solicitudes de cotización.</p>
 
     <p class="text-lg lg:text-xl">Todas las funcionalidades están incluidas en todos los paquetes:</p>
 
     <ul class="list-disc list-inside text-lg lg:text-xl">
+      <li>Catálogo de productos</li>
+      <li>Portal para clientes</li>
       <li>Solicitudes de cotización</li>
       <li>Cotizaciones</li>
-      <li>Catálogo de productos</li>
-      <li>Clientes y contactos</li>
-      <li>Portal para clientes</li>
+      <li>Administración de clientes y contactos</li>
     </ul>
 
-    <p class="text-lg lg:text-xl">El precio cambia por la cantidad de miembros en el equipo.</p>
-
-    <div class="flex flex-col gap-2 lg:gap-4">
-      <div class="border border-gray-300 rounded-lg p-4 flex flex-col gap-2">
-        <p class="text-lg lg:text-xl text-gray-500">1 miembro en el equipo</p>
-        <p class="text-lg lg:text-xl"><strong>$500 MXN/mes</strong></p>
-      </div>
-      <div class="border border-gray-300 rounded-lg p-4 flex flex-col gap-2">
-        <p class="text-lg lg:text-xl text-gray-500">Hasta 10 miembros en el equipo</p>
-        <p class="text-lg lg:text-xl"><strong>$2,000 MXN/mes</strong></p>
-      </div>
-      <div class="border border-gray-300 rounded-lg p-4 flex flex-col gap-2">
-        <p class="text-lg lg:text-xl text-gray-500">Miembros ilimitados en el equipo</p>
-        <p class="text-lg lg:text-xl"><strong>$8,000 MXN/mes</strong></p>
-      </div>
-    </div>
+    <p class="text-lg lg:text-xl"><strong>$500 MXN/mes por cada miembro del equipo</strong></p>
 
     <div class="flex justify-center">
-      <%= render "home/button" %>
+      <%= link_to("Crear cuenta gratis", "https://app.industrially.net/accounts/new", class: btn_class) %>
     </div>
   </div>
 </div>
