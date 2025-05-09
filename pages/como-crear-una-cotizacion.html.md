@@ -24,16 +24,16 @@ La cotización es creada con varios valores “default” o “por defecto”.
 - **Punto de embarque, días de vigencia, condiciones de pago, moneda y condiciones generales** son valores tomados de la configuración general de la cotización.
 
 <aside class="p-4 bg-gray-100 rounded-lg">
-👉 [Cómo modificar los valores predeterminados para las cotizaciones](como-modificar-los-valores-predeterminados-para-las-cotizaciones.html)
+👉 [Cómo modificar los valores predeterminados para las cotizaciones](como-modificar-los-valores-predeterminados-para-las-cotizaciones)
 </aside>
 
 Una vez en la página de cotización tienes tres opciones para agregar partidas a la cotización:
 
-* [Agregar partida manualmente](como-agregar-partida-manualmente.html)
-* [Importar partida de otra cotización](como-importar-partida-de-otra-cotizacion.html)
-* [Duplicar partida dentro de la misma cotización](como-duplicar-partida-dentro-de-la-misma-cotizacion.html)
+* [Agregar partida manualmente](como-agregar-partida-manualmente)
+* [Importar partida de otra cotización](como-importar-partida-de-otra-cotizacion)
+* [Duplicar partida dentro de la misma cotización](como-duplicar-partida-dentro-de-la-misma-cotizacion)
 
-También tienes la opción de [Subir PDF](como-subir-pdf-de-cotizacion.html), para los casos en los que prefieras generar la cotización en otro sistema y solo subir el pdf en Industrially.
+También tienes la opción de [Subir PDF](como-subir-pdf-de-cotizacion), para los casos en los que prefieras generar la cotización en otro sistema y solo subir el pdf en Industrially.
 
 ## Guardar cotización
 

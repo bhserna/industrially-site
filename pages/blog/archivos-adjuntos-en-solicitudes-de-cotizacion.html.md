@@ -24,4 +24,4 @@ De forma similar, los miembros de tu equipo podrán ver los documentos, con todo
 
 ![Solicitud de cotización creada con archivos adjuntos](archivos-adjuntos-en-solicitudes-de-cotizacion/solicitud-miembro-equipo.png)
 
-Este cambio puede mejorar mucho la experiencia de tus clientes cuando [integras industrially con tu sitio web](/como-recibir-solicitudes-de-cotizacion-desde-tu-sitio-web.html).
+Este cambio puede mejorar mucho la experiencia de tus clientes cuando [integras industrially con tu sitio web](/como-recibir-solicitudes-de-cotizacion-desde-tu-sitio-web).

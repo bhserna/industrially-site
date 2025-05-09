@@ -6,7 +6,7 @@ image: nuevo-contacto-al-crear-solicitud-de-cotizacion/nuevo-contacto.png
 keywords: Industrially, nuevo, contacto, solicitud, cotización, equipo industrial, software para proveedores industriales, gestión de solicitudes, flujo de cotización, equipo industrial, portal de clientes, seguimiento de cotizaciones
 ---
 
-Si necesitas [crear una solicitud de cotización](como-crear-una-solicitud-de-cotizacion.html) para un contacto que aún no está registrado en el sistema, desde la forma de “Nueva solicitud de cotización”, puedes dar click en “Nuevo contacto”
+Si necesitas [crear una solicitud de cotización](como-crear-una-solicitud-de-cotizacion) para un contacto que aún no está registrado en el sistema, desde la forma de “Nueva solicitud de cotización”, puedes dar click en “Nuevo contacto”
 
 ![Nuevo contacto](nuevo-contacto-al-crear-solicitud-de-cotizacion/nuevo-contacto.png)
 

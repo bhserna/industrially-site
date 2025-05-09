@@ -6,7 +6,7 @@ image: como-duplicar-partida-dentro-de-la-misma-cotizacion/duplicar-partida.png
 keywords: Industrially, duplicar, partida, cotización, solicitud, cotización, equipo industrial, software para proveedores industriales, gestión de solicitudes, flujo de cotización, equipo industrial, portal de clientes, seguimiento de cotizaciones
 ---
 
-Una vez que ya [agregaste una partida a la cotización](como-crear-una-cotizacion.html), tienes la opción de dar click en “Duplicar” y el sistema va a copiar la partida.
+Una vez que ya [agregaste una partida a la cotización](como-crear-una-cotizacion), tienes la opción de dar click en “Duplicar” y el sistema va a copiar la partida.
 
 ![Duplicar partida](como-duplicar-partida-dentro-de-la-misma-cotizacion/duplicar-partida.png)
 

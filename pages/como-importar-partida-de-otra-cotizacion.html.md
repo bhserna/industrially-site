@@ -6,7 +6,7 @@ image: como-importar-partida-de-otra-cotizacion/importar-partida.png
 keywords: Industrially, importar, partida, cotización, solicitud, cotización, equipo industrial, software para proveedores industriales, gestión de solicitudes, flujo de cotización, equipo industrial, portal de clientes, seguimiento de cotizaciones
 ---
 
-Si quieres importar una partida de otra cotización publicada anteriormente, da click en “Importar partida” [en la página de cotización](como-crear-una-cotizacion.html) y el sistema te mostrará una pantalla para poder seleccionar la cotización de la que quieres importar la partida.
+Si quieres importar una partida de otra cotización publicada anteriormente, da click en “Importar partida” [en la página de cotización](como-crear-una-cotizacion) y el sistema te mostrará una pantalla para poder seleccionar la cotización de la que quieres importar la partida.
 
 Para agregar una partida manualmente da click en “Agregar partida” y el sistema mostrará una pantalla como la siguiente:
 
