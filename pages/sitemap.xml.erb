@@ -5,27 +5,22 @@ layout: false
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <% pages = Sitepress::Site.new.resources.glob("*html*") %>
-  <url>
-    <loc>https://industrially.net</loc>
-    <lastmod><%= pages.map { |page| page.data.date }.compact.max&.strftime("%Y-%m-%d") %></lastmod>
-  </url>
   <% pages.each do |page| %>
+  <url>
+    <loc>https://industrially.net<%= page.request_path %></loc>
+    <% if page.data.date %>
+      <lastmod><%= page.data.date.strftime("%Y-%m-%d") %></lastmod>
+    <% end %>
+  </url>
+  <% if page.children.any? %>
+  <% page.children.each do |child| %>
     <url>
-      <loc>https://industrially.net<%= page.request_path %></loc>
-      <% if page.data.date %>
-        <lastmod><%= page.data.date.strftime("%Y-%m-%d") %></lastmod>
+      <loc>https://industrially.net<%= child.request_path %></loc>
+      <% if child.data.date %>
+        <lastmod><%= child.data.date.strftime("%Y-%m-%d") %></lastmod>
       <% end %>
     </url>
-
-    <% if page.children.any? %>
-      <% page.children.each do |child| %>
-        <url>
-          <loc>https://industrially.net<%= child.request_path %></loc>
-          <% if child.data.date %>
-            <lastmod><%= child.data.date.strftime("%Y-%m-%d") %></lastmod>
-          <% end %>
-        </url>
-      <% end %>
-    <% end %>
+  <% end %>
+  <% end %>
   <% end %>
 </urlset>
