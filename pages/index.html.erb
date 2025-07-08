@@ -25,25 +25,24 @@ description: "Plataforma para crear sitios web para proveedores industriales, cr
 
 <section class="bg-white py-12 sm:py-16 lg:py-20">
   <div class="container mx-auto px-4 max-w-4xl">
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-3 lg:gap-4">
       <div class="mb-3">
         <span class="bg-gray-100 text-gray-800 px-4 py-1 rounded-full">Para proveedores industriales</span>
       </div>
-      <h1 class="text-2xl sm:text-4xl lg:text-5xl font-bold mb-6">
+      <h1 class="text-2xl sm:text-4xl lg:text-5xl font-bold">
         Crea un sitio web con catálogo de productos, flujo de cotización, y portal para clientes en minutos
       </h1>
-      <p class="text-base text-lg lg:text-2xl text-gray-500 mb-3">
+      <p class="text-base text-lg lg:text-2xl text-gray-500">
         Empieza a crear tu sitio web hoy, no necesitas conocimientos técnicos,
-        solo necesitas un navegador y un poco de tiempo. Nosotros te ayudaremos
-        personalmente con cualquier duda.
+        solo necesitas un navegador y un poco de tiempo.
       </p>
-      <p class="text-base text-lg lg:text-2xl text-gray-500 mb-3">
+      <p class="text-base text-lg lg:text-2xl text-gray-500">
         Crea tu sitio grátis sin registrate, solo con el nombre de tu empresa, 
         usalo gratis por 2 meses y después solo paga $2,000 MXN/mes + IVA.
       </p>
       <div class="flex flex-col sm:flex-row gap-4">
-        <%= link_to("Empezar a crear sitio web", "https://app.industrially.net/accounts/new", class: primary_btn_class) %>
-        <%= link_to("Visitar sitio demo", "https://demo.industrially.net", target: "_blank", class: btn_class) %>
+        <div><%= link_to("Empezar a crear sitio web", "https://app.industrially.net/accounts/new", class: primary_btn_class) %></div>
+        <div><%= link_to("Visitar sitio demo", "https://demo.industrially.net", target: "_blank", class: btn_class) %></div>
       </div>
     </div>
   </div>
