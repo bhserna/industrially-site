@@ -20,8 +20,10 @@ description: "Plataforma para crear sitios web para proveedores industriales, cr
   }
 </script>
 
-<% primary_btn_class = "inline-block bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base text-lg lg:text-xl font-semibold hover:bg-gray-800 transition duration-300" %>
-<% btn_class = "inline-block bg-gray-100 text-gray-800 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base text-lg lg:text-xl font-semibold hover:bg-gray-200 transition duration-300" %>
+<% primary_btn_class =
+  "inline-block bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base text-lg lg:text-xl font-semibold hover:bg-gray-800 transition duration-300" %>
+<% btn_class =
+  "inline-block bg-gray-100 text-gray-800 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base text-lg lg:text-xl font-semibold hover:bg-gray-200 transition duration-300" %>
 
 <section class="bg-white py-12 sm:py-16 lg:py-20">
   <div class="container mx-auto px-4 max-w-4xl">
@@ -30,106 +32,186 @@ description: "Plataforma para crear sitios web para proveedores industriales, cr
         <span class="bg-gray-100 text-gray-800 px-4 py-1 rounded-full">Para proveedores industriales</span>
       </div>
       <h1 class="text-2xl sm:text-4xl lg:text-5xl font-bold">
-        Crea un sitio web con catálogo de productos, flujo de cotización, y portal para clientes en minutos
+        Crea un sitio web con catálogo de productos, flujo de cotización, y
+        portal para clientes en minutos
       </h1>
       <p class="text-base text-lg lg:text-2xl text-gray-500">
         Empieza a crear tu sitio web hoy, no necesitas conocimientos técnicos,
         solo necesitas un navegador y un poco de tiempo.
       </p>
       <p class="text-base text-lg lg:text-2xl text-gray-500">
-        Crea tu sitio grátis sin registrate, solo con el nombre de tu empresa, 
-        usalo gratis por 2 meses y después solo paga $2,000 MXN/mes + IVA.
+        Crea tu sitio grátis sin registrarte, solo con el nombre de tu empresa,
+        usalo gratis por 2 meses.
       </p>
       <div class="flex flex-col sm:flex-row gap-4">
-        <div><%= link_to("Empezar a crear sitio web", "https://app.industrially.net/accounts/new", class: primary_btn_class) %></div>
-        <div><%= link_to("Visitar sitio demo", "https://demo.industrially.net", target: "_blank", class: btn_class) %></div>
+        <div><%= link_to(
+            "Empezar a crear sitio web",
+            "https://app.industrially.net/accounts/new",
+            class: primary_btn_class,
+          ) %></div>
+        <div><%= link_to(
+            "Visitar sitio demo",
+            "https://demo.industrially.net",
+            target: "_blank",
+            class: btn_class,
+          ) %></div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+<div
+  class="
+    flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4
+    lg:p-8
+  "
+>
   <div class="flex flex-col gap-2 lg:gap-4">
     <h2 class="text-lg lg:text-2xl font-bold">¿Cómo se vería el sitio web y catálogo de productos de tu empresa?</h2>
 
     <p class="text-lg lg:text-xl">
-      Puedes visitar el <a class="underline" href="https://demo.industrially.net" target="_blank">sitio demo</a> pero aquí hay algunas imágenes de una página de inicio, la página de productos de una marca y la página de un producto.
+      Puedes visitar el
+      <a class="underline" href="https://demo.industrially.net" target="_blank">sitio demo</a>
+      pero aquí hay algunas imágenes de una página de inicio, la página de
+      productos de una marca y la página de un producto.
     </p>
 
-    <%= tag.img src: "home/home-demo.png", class: "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
-    <%= tag.img src: "home/pagina-marca-real.png", class: "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
-    <%= tag.img src: "home/pagina-producto-real.png", class: "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
+    <%= tag.img src: "home/home-demo.png",
+            class:
+              "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
+    <%= tag.img src: "home/pagina-marca-real.png",
+            class:
+              "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
+    <%= tag.img src: "home/pagina-producto-real.png",
+            class:
+              "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
 
     <div class="flex justify-center">
-      <%= link_to("Empezar a crear sitio web", "https://app.industrially.net/accounts/new", class: primary_btn_class) %>
+      <%= link_to(
+        "Empezar a crear sitio web",
+        "https://app.industrially.net/accounts/new",
+        class: primary_btn_class,
+      ) %>
     </div>
   </div>
 </div>
 
-
-<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+<div
+  class="
+    flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4
+    lg:p-8
+  "
+>
   <div class="flex flex-col gap-2 lg:gap-4">
     <h2 class="text-lg lg:text-2xl font-bold">¿Cómo podrán pedir cotizaciones tus clientes?</h2>
 
     <p class="text-lg lg:text-xl">
-      Tus clientes pueden solicitar cotizaciones desde las páginas de tus productos, marcas y categorías. Aparte de eso, tendrán un portal para acceder a ellas.
+      Tus clientes pueden solicitar cotizaciones desde las páginas de tus
+      productos, marcas y categorías. Aparte de eso, tendrán un portal para
+      acceder a ellas.
     </p>
 
-    <%= tag.img src: "home/producto-demo-pm-100.png", class: "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
-    <%= tag.img src: "home/forma-solicitud-de-cotizacion.png", class: "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
-    <%= tag.img src: "home/solicitud-cotizacion-cliente.png", class: "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
-    <%= tag.img src: "home/cotizacion-cliente.png", class: "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
+    <%= tag.img src: "home/producto-demo-pm-100.png",
+            class:
+              "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
+    <%= tag.img src: "home/forma-solicitud-de-cotizacion.png",
+            class:
+              "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
+    <%= tag.img src: "home/solicitud-cotizacion-cliente.png",
+            class:
+              "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
+    <%= tag.img src: "home/cotizacion-cliente.png",
+            class:
+              "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
 
     <div class="flex justify-center">
-      <%= link_to("Empezar a crear sitio web", "https://app.industrially.net/accounts/new", class: primary_btn_class) %>
+      <%= link_to(
+        "Empezar a crear sitio web",
+        "https://app.industrially.net/accounts/new",
+        class: primary_btn_class,
+      ) %>
     </div>
   </div>
 </div>
 
-<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+<div
+  class="
+    flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4
+    lg:p-8
+  "
+>
   <div class="flex flex-col gap-2 lg:gap-4">
     <h2 class="text-lg lg:text-2xl font-bold">¿Cómo pueden compartir cotizaciones con sus clientes?</h2>
 
     <p class="text-lg lg:text-xl">
       Aparte tendrás herramientas para generar cotizaciones en base a una
-      utilidad deseada, con cálculos automáticos, capacidad de importar partidas
-      de cotizaciones pasadas.
+      utilidad deseada, con cálculos automáticos, capacidad de importar
+      partidas de cotizaciones pasadas.
     </p>
 
     <p class="text-lg lg:text-xl">
-      O sí ya tienes una herramienta de cotización puedes subir tus cotizaciones en PDF para que tus clientes puedan accesarlas desde tu sitio.
+      O sí ya tienes una herramienta de cotización puedes subir tus
+      cotizaciones en PDF para que tus clientes puedan accesarlas desde tu
+      sitio.
     </p>
 
-    <%= tag.img src: "home/cotizar.png", class: "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
+    <%= tag.img src: "home/cotizar.png",
+            class:
+              "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
 
     <div class="flex justify-center">
-      <%= link_to("Empezar a crear sitio web", "https://app.industrially.net/accounts/new", class: primary_btn_class) %>
+      <%= link_to(
+        "Empezar a crear sitio web",
+        "https://app.industrially.net/accounts/new",
+        class: primary_btn_class,
+      ) %>
     </div>
   </div>
 </div>
 
-<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+<div
+  class="
+    flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4
+    lg:p-8
+  "
+>
   <div class="flex flex-col gap-2 lg:gap-4">
     <h2 class="text-lg lg:text-2xl font-bold">Da seguimiento efectivo a cada cotización</h2>
 
-    <p class="text-lg lg:text-xl">Ten a la mano todas las cotizaciones de la empresa, filtra por estatus o por su contenido, ten a la mano las fechas de creación y vencimiento, filtra por cliente o contacto, deja notas sobre el proceso…</p>
+    <p class="text-lg lg:text-xl">Ten a la mano todas las cotizaciones de la empresa, filtra por estatus o
+      por su contenido, ten a la mano las fechas de creación y vencimiento,
+      filtra por cliente o contacto, deja notas sobre el proceso…</p>
 
-    <%= tag.img src: "home/hero2.png", class: "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
-    <%= tag.img src: "home/seguimiento-a-cotizaciones.png", class: "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
+    <%= tag.img src: "home/hero2.png",
+            class:
+              "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
+    <%= tag.img src: "home/seguimiento-a-cotizaciones.png",
+            class:
+              "w-full h-auto rounded-xl border border-gray-300 p-1 shadow-lg bg-white" %>
 
     <div class="flex justify-center">
-      <%= link_to("Empezar a crear sitio web", "https://app.industrially.net/accounts/new", class: primary_btn_class) %>
+      <%= link_to(
+        "Empezar a crear sitio web",
+        "https://app.industrially.net/accounts/new",
+        class: primary_btn_class,
+      ) %>
     </div>
   </div>
 </div>
 
-<div class="flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4 lg:p-8">
+<div
+  class="
+    flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4
+    lg:p-8
+  "
+>
   <div class="flex flex-col gap-2 lg:gap-4">
     <h2 class="text-lg lg:text-2xl font-bold">Precio</h2>
 
     <p class="text-lg lg:text-xl">
       Crea tu sitio grátis sin registrate, solo con el nombre de tu empresa,
-      úsalo gratis por 2 meses. Después el costo por el uso de la plataforma es:
+      úsalo gratis por 2 meses. Después el costo por el uso de la plataforma
+      es:
       <br><strong>$2,000 MXN/mes + IVA</strong>
     </p>
 
@@ -144,7 +226,11 @@ description: "Plataforma para crear sitios web para proveedores industriales, cr
     </ul>
 
     <div class="flex flex-col sm:flex-row justify-center gap-4">
-      <%= link_to("Empezar a crear sitio web", "https://app.industrially.net/accounts/new", class: primary_btn_class) %>
+      <%= link_to(
+        "Empezar a crear sitio web",
+        "https://app.industrially.net/accounts/new",
+        class: primary_btn_class,
+      ) %>
     </div>
   </div>
 </div>
