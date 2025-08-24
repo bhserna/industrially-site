@@ -1,0 +1,21 @@
+# Git y control de versiones  
+.git
+.gitignore
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Herramientas de desarrollo
+.ruby-lsp/
+.tool-versions
+.env
+
+# Documentación no necesaria en producción
+README.md
+fly.toml
+
+# Archivos temporales y logs
+*.log
+*.tmp
+tmp/
