@@ -65,6 +65,14 @@ end %>
         Ayudamos a proveedores industriales a crear su sitio web con un catálogo de productos, flujo de solicitud de
         cotización, sistema para generar cotizaciones y un portal para clientes.
       </p>
+      <div style="position: relative; padding-bottom: 62.42774566473989%; height: 0;">
+        <iframe src="https://www.loom.com/embed/8e5fedc542244d5eae4a3d86afb0dc44?sid=defef840-f283-4d75-9bd8-b08541334813"
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen 
+                allowfullscreen 
+                class="rounded-xl"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
       <%= buttons %>
     </div>
   </div>
@@ -76,93 +84,22 @@ end %>
     lg:p-8
   "
 >
-  <div class="flex flex-col gap-6 lg:gap-8 text-center">
-    <h2 class="text-xl lg:text-4xl font-bold">Crea un sitio web con tus productos, categorías y marcas</h2>
-    
-    <div class="relative mx-auto max-w-2xl">
-      <video controls poster="home/home-demo.png" class="w-full aspect-video rounded-xl border border-gray-300 shadow-lg bg-white object-cover">
-        <source src="home/catalogo.mp4" type="video/mp4">
-        Tu navegador no soporta el elemento de video.
-      </video>
-    </div>
-    
-    <%= buttons %>
-  </div>
-</div>
-
-<div
-  class="
-    flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4
-    lg:p-8
-  "
->
-  <div class="flex flex-col gap-6 lg:gap-8 text-center">
-    <h2 class="text-xl lg:text-4xl font-bold">Flujo de solicitud de cotización integrado</h2>
-
-    <p class="lg:text-xl">
-      Tus clientes podrán solicitar cotizaciones desde las páginas de tus
-      productos, marcas y categorías. Aparte de eso, tendrán un portal para
-      acceder a ellas.
-    </p>
-
-    <div class="relative mx-auto max-w-2xl">
-      <video controls poster="home/solicitudes-de-cotizacion.png" class="w-full aspect-video rounded-xl border border-gray-300 shadow-lg bg-white object-cover">
-        <source src="home/solicitudes-de-cotizacion.mp4" type="video/mp4">
-        Tu navegador no soporta el elemento de video.
-      </video>
-    </div>
-    
-    <%= buttons %>
-  </div>
-</div>
-
-<div
-  class="
-    flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4
-    lg:p-8
-  "
->
-  <div class="flex flex-col gap-6 lg:gap-8 text-center">
-    <h2 class="text-xl lg:text-4xl font-bold">Genera cotizaciones eficientemente</h2>
-
-    <p class="lg:text-xl">
-      Herramientas para crear cotizaciones, importar partidas, subir
-      cotizaciones en PDF, acceso para clientes.
-    </p>
-
-    <div class="relative mx-auto max-w-2xl">
-      <video controls poster="home/cotizar.png" class="w-full aspect-video rounded-xl border border-gray-300 shadow-lg bg-white object-cover">
-        <source src="home/cotizaciones.mp4" type="video/mp4">
-        Tu navegador no soporta el elemento de video.
-      </video>
-    </div>
-    
-    <%= buttons %>
-  </div>
-</div>
-
-<div
-  class="
-    flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4
-    lg:p-8
-  "
->
   <div id="prueba_gratis" class="flex flex-col gap-6 lg:gap-8">
     <h2 class="text-center text-xl lg:text-4xl font-bold">Prueba gratis</h2>
 
     <p class="lg:text-xl">
-      Escríbenos a <%= mail_to "contacto@industrially.net", class: "underline" %> con título "Prueba gratis", con:
+      Escribenos y contactaremos lo más pronto posible para ver cómo podemos ayudarte.
+    </p>
+
+    <p class="lg:text-xl">
+      Escríbenos a <%= mail_to "contacto@industrially.net", class: "underline" %> con:
     </p>
 
     <ul class="lg:text-xl list-disc list-inside">
       <li>El nombre de tu empresa</li>
       <li>Qué hace tu empresa</li>
       <li>Página web actual</li>
-      <li>Tus datos de contacto (nombre, puesto, correo electrónico)</li>
+      <li>Tus datos de contacto (nombre, teléfono, correo electrónico, puesto)</li>
     </ul>
-
-    <p class="lg:text-xl">
-      Nosotros crearemos una versión inicial de tu catálogo <strong>totalmente gratis</strong> hasta tus primeras 10 solicitudes de cotización.
-    </p>
   </div>
 </div>
