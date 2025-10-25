@@ -38,8 +38,9 @@ end %>
     tag.div do
       link_to(
         "Pruébalo gratis",
-        "#prueba_gratis",
-        class: primary_btn_class,
+        "https://app.industrially.net/accounts/new",
+        target: "_blank",
+        class: primary_btn_class
       )
     end +
       tag.div do
@@ -77,26 +78,3 @@ end %>
     </div>
   </div>
 </section>
-
-<div
-  class="
-    flex flex-col gap-12 max-w-4xl mx-auto px-4 my-12 bg-gray-100 rounded-xl p-4
-    lg:p-8
-  "
->
-  <div id="prueba_gratis" class="flex flex-col gap-6 lg:gap-6">
-    <h2 class="text-center text-xl lg:text-4xl font-bold">Prueba gratis</h2>
-
-    <p class="lg:text-xl">
-      Escríbenos a <%= mail_to "contacto@industrially.net", class: "underline" %> con:
-    </p>
-
-    <ul class="lg:text-xl list-disc list-inside">
-      <li>El nombre de tu empresa</li>
-      <li>Qué hace tu empresa</li>
-      <li>Página web actual</li>
-      <li>Tus datos de contacto (nombre, teléfono, correo electrónico, puesto)</li>
-      <li>Cómo crees que te podemos ayudar</li>
-    </ul>
-  </div>
-</div>
